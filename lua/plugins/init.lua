@@ -81,4 +81,10 @@ return require("packer").startup(function(use)
   })
   use "lukas-reineke/indent-blankline.nvim"
   use "norcalli/nvim-colorizer.lua"
+
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
 end)
