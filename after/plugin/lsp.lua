@@ -21,14 +21,12 @@ lsp.setup_nvim_cmp({
   mapping = cmp_mappings
 })
 
-lsp.set_preferences({
-    suggest_lsp_servers = false,
-    sign_icons = {
-        error = '',
-        warn = '',
-        hint = '',
-        info = ''
-    }
+
+lsp.set_sign_icons ({
+  error = '',
+  warn = '',
+  hint = '',
+  info = ''
 })
 
 lsp.on_attach(function(client, bufnr)

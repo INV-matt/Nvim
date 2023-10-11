@@ -20,6 +20,7 @@ return require("packer").startup(function(use)
       vim.cmd("colorscheme tokyonight-night")
     end
   })
+  --use ({ "catppuccin/nvim",as = "catppuccin",})
   
   use {
     "nvim-telescope/telescope.nvim", branch = "0.1.x",
@@ -55,6 +56,7 @@ return require("packer").startup(function(use)
     }
   }
 
+  use "luckasRanarison/tree-sitter-hypr"
   use "lervag/vimtex"
   use "elkowar/yuck.vim"
   use "Fymyte/rasi.vim"
